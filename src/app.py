@@ -4,11 +4,13 @@ import seaborn as sns
 import numpy as np
 import matplotlib.pyplot as plt
 
+from time import sleep
 
-##dados = pd.read_csv("dados/obitos-2019.csv")
-
+## CARREGA OS DADOS MAIS RAPIDO DEIXANDO NO CACHE E TODA VEZ QUE PRECISA ALTERAR VAI CARREGAR
+@st.cache
 def carrega_dados(caminho):
     dados = pd.read_csv(caminho)
+    sleep(3)
     return dados
 
 def grafico_comparativo(dados_2019, dados_2020, causa, estado="BRASIL"):
