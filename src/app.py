@@ -42,7 +42,7 @@ def main():
     estado = np.append(obitos_2020["uf"].unique(), "BRASIL")
 
 
-    st.title("TESTE_TESTE_TEMA_COVID")
+    st.title("TESTE")
 
     st.title("ANÁLISE DE ÓBITOS 2019-2020")
     st.markdown("ESTE TRABALHO ANALISE DOS DADOS DE **ÓBITOS 2019-2020**")
