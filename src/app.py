@@ -13,6 +13,8 @@ def carrega_dados(caminho):
     sleep(3)
     return dados
 
+
+print("teste")
 def grafico_comparativo(dados_2019, dados_2020, causa, estado="BRASIL"):
     
     if estado == "BRASIL":
