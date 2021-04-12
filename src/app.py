@@ -13,8 +13,6 @@ def carrega_dados(caminho):
     sleep(3)
     return dados
 
-
-print("teste")
 def grafico_comparativo(dados_2019, dados_2020, causa, estado="BRASIL"):
     
     if estado == "BRASIL":
@@ -42,7 +40,10 @@ def main():
     obitos_2020 = carrega_dados("dados/obitos-2020.csv")
     tipo_doenca = obitos_2020["tipo_doenca"].unique()
     estado = np.append(obitos_2020["uf"].unique(), "BRASIL")
-    
+
+
+    st.title("teste")
+
     st.title("ANÁLISE DE ÓBITOS 2019-2020")
     st.markdown("ESTE TRABALHO ANALISE DOS DADOS DE **ÓBITOS 2019-2020**")
 
