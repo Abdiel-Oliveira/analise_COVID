@@ -11,7 +11,7 @@ from time import sleep
 def carrega_dados(caminho):
     dados = pd.read_csv(caminho)
     sleep(3)
-    return dados
+    return dados    
 
 def grafico_comparativo(dados_2019, dados_2020, causa, estado="BRASIL"):
     
@@ -41,6 +41,8 @@ def main():
     tipo_doenca = obitos_2020["tipo_doenca"].unique()
     estado = np.append(obitos_2020["uf"].unique(), "BRASIL")
 
+
+    st.title("TESTE")
     st.title("ANÁLISE DE ÓBITOS 2019-2020")
     st.markdown("ESTE TRABALHO ANALISE DOS DADOS DE **ÓBITOS 2019-2020**")
 
